@@ -1,0 +1,10 @@
+#!/bin/bash
+# Start a new tmux session
+
+SESSION=$1
+if [ -z ${1} ]; then
+   SESSION="pvissa-01"
+fi
+
+/home/pvissa/bin/tmux.sh new -s ${SESSION}
+#LD_PRELOAD=$HOME/opt/lib/libevent-2.1.so.6 $HOME/opt/bin/tmux new -s ${SESSION}

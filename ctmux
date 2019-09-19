@@ -1,0 +1,10 @@
+#!/bin/bash
+# Connect to a previouly started session
+
+SESSION=$1
+if [ -z ${1} ]; then
+   SESSION="pvissa-01"
+fi
+
+# LD_PRELOAD=$HOME/opt/lib/libevent-2.1.so.6 $HOME/opt/bin/tmux attach -t ${SESSION}
+/home/pvissa/bin/tmux.sh attach -t ${SESSION}

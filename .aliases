@@ -1,0 +1,16 @@
+alias ll='ls -Fl'
+alias la='ls -aFl'
+
+alias em='emacs -nw'
+
+alias vi='nvim'
+alias vimdiff='nvim -d'
+alias vim='stty -ixon && vim'
+
+alias diff='colordiff -u'
+
+alias ag='ag --color-line-number="0;33" --color-match="0;35" --color-path="0;97" --path-to-ignore ~/.ignore'
+alias fzf='fzf --preview "highlight -O ansi -l {}"'
+
+alias ssh='LC_USER=$USER ssh'
+alias attach='attach_or_connect'
